@@ -48,28 +48,7 @@ def reader(directory):
                             #print(frame)
 
                 writer.writerow(towrite)
-                """for key in dic:
-                    print(key)
-                    if key != "APIC:" and key != "APIC" and key!="APIC:\n":
-                        for frame in mutagen.File(fullname).tags.getall(key):
-                            print(frame)
-                    else:
-                        print("image data")"""
 
-"""
-def imager(directory):
-    for filename in os.listdir(directory):
-        if filename.endswith(".mp3"):
-            fullname = os.path.join(directory,filename)
-            dic = mutagen.File(fullname).keys()
-            
-            if mutagen.File(fullname).tags is None:
-                #print("no tag info no image")
-                continue
-            else:
-                for frame in mutagen.File(fullname).tags.getall("APIC"):
-                    print(frame)
-"""
 
 def main():
     directory = "example set"
