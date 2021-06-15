@@ -24,7 +24,7 @@ def rmmp3(filename):
 def reader(directory):
     with open("song_metadata.csv",mode="w") as song_metadata:
         writer = csv.writer(song_metadata, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(["Title","Artist","Album","Year", "Genre"])
+        writer.writerow(["Title","Artist","Album","Year"])
 
         for filename in os.listdir(directory):
             if filename.endswith(".mp3"):
